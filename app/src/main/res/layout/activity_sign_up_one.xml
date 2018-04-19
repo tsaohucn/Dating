@@ -6,4 +6,96 @@
     android:layout_height="match_parent"
     tools:context=".SignUpOne">
 
+    <EditText
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <EditText
+        android:id="@+id/nickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/accountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="帳號"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@id/account"
+        app:layout_constraintRight_toLeftOf="@id/account"
+        app:layout_constraintTop_toTopOf="@id/account" />
+
+    <TextView
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密碼"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@id/password"
+        app:layout_constraintRight_toLeftOf="@id/password"
+        app:layout_constraintTop_toTopOf="@id/password" />
+
+    <TextView
+        android:id="@+id/nickNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暱稱"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@id/nickName"
+        app:layout_constraintRight_toLeftOf="@id/nickName"
+        app:layout_constraintTop_toTopOf="@id/nickName" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="196dp"
+        android:layout_height="171dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/nextStep"
+        android:layout_width="270dp"
+        android:layout_height="39dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="下一步"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:onClick="goToSignUpTwo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"  />
+
 </android.support.constraint.ConstraintLayout>

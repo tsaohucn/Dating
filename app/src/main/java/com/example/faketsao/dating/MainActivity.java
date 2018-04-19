@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import com.google.firebase.auth.FirebaseAuth;
 import android.support.annotation.NonNull;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,5 +39,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         auth.removeAuthStateListener(authStateListener);
+    }
+
+    public void goToSignUpOne(View view) {
+        setContentView(R.layout.activity_sign_up_one);
+    }
+
+    public void goToSignUpTwo(View view) {
+        setContentView(R.layout.activity_sign_up_two);
     }
 }
