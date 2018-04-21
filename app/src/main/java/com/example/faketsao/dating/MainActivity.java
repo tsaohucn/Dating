@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import com.google.firebase.auth.FirebaseAuth;
 import android.support.annotation.NonNull;
+import android.content.Intent;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
                     // 登入
                 } else {
                     // 歡迎頁面
-                    setContentView(R.layout.activity_welcome);
+                    startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
+                    //setContentView(R.layout.activity_welcome);
                 }
             }
         };
@@ -41,11 +43,4 @@ public class MainActivity extends AppCompatActivity {
         auth.removeAuthStateListener(authStateListener);
     }
 
-    public void goToSignUpOne(View view) {
-        setContentView(R.layout.activity_sign_up_one);
-    }
-
-    public void goToSignUpTwo(View view) {
-        setContentView(R.layout.activity_sign_up_two);
-    }
 }
